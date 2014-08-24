@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB32101D19A9B75300ACB563 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32101C19A9B75300ACB563 /* MBProgressHUD.m */; };
+		BB32102019A9BB8600ACB563 /* NewBeaconTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32101F19A9BB8600ACB563 /* NewBeaconTableViewController.m */; };
+		BB434D0719A9D38E00229F5E /* coloredCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB434D0619A9D38E00229F5E /* coloredCircleView.m */; };
 		BB82953D19A99F9600B716F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82953C19A99F9600B716F9 /* Foundation.framework */; };
 		BB82953F19A99F9600B716F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82953E19A99F9600B716F9 /* CoreGraphics.framework */; };
 		BB82954119A99F9600B716F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82954019A99F9600B716F9 /* UIKit.framework */; };
@@ -25,18 +28,17 @@
 		BB82957A19A99FE300B716F9 /* RWTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB82957319A99FE300B716F9 /* RWTItem.m */; };
 		BB82957B19A99FE300B716F9 /* RWTItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB82957519A99FE300B716F9 /* RWTItemCell.m */; };
 		BB82958B19A9A00600B716F9 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = BB82957E19A9A00600B716F9 /* UIAlertView+Blocks.m */; };
-		BB82958C19A9A00600B716F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82957F19A9A00600B716F9 /* SystemConfiguration.framework */; };
-		BB82958D19A9A00600B716F9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958019A9A00600B716F9 /* StoreKit.framework */; };
-		BB82958E19A9A00600B716F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958119A9A00600B716F9 /* Security.framework */; };
-		BB82958F19A9A00600B716F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958219A9A00600B716F9 /* QuartzCore.framework */; };
-		BB82959019A9A00600B716F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958319A9A00600B716F9 /* MobileCoreServices.framework */; };
-		BB82959119A9A00600B716F9 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958419A9A00600B716F9 /* libz.1.1.3.dylib */; };
-		BB82959219A9A00600B716F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958519A9A00600B716F9 /* CoreGraphics.framework */; };
-		BB82959319A9A00600B716F9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958619A9A00600B716F9 /* CFNetwork.framework */; };
-		BB82959419A9A00600B716F9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958719A9A00600B716F9 /* AudioToolbox.framework */; };
-		BB82959519A9A00600B716F9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958819A9A00600B716F9 /* Bolts.framework */; };
-		BB82959619A9A00600B716F9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958919A9A00600B716F9 /* Parse.framework */; };
-		BB82959719A9A00600B716F9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82958A19A9A00600B716F9 /* ParseFacebookUtils.framework */; };
+		BB82959A19A9A0C300B716F9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82959819A9A0C300B716F9 /* Parse.framework */; };
+		BB82959B19A9A0C300B716F9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82959919A9A0C300B716F9 /* ParseFacebookUtils.framework */; };
+		BB82959D19A9A0CB00B716F9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82959C19A9A0CB00B716F9 /* Bolts.framework */; };
+		BB82959F19A9A0F000B716F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82959E19A9A0F000B716F9 /* SystemConfiguration.framework */; };
+		BB8295A119A9A10200B716F9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295A019A9A10200B716F9 /* StoreKit.framework */; };
+		BB8295A319A9A10900B716F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295A219A9A10900B716F9 /* Security.framework */; };
+		BB8295A519A9A10F00B716F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295A419A9A10F00B716F9 /* QuartzCore.framework */; };
+		BB8295A719A9A11700B716F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295A619A9A11700B716F9 /* MobileCoreServices.framework */; };
+		BB8295A919A9A12100B716F9 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295A819A9A12100B716F9 /* libz.1.1.3.dylib */; };
+		BB8295AB19A9A12E00B716F9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295AA19A9A12E00B716F9 /* CFNetwork.framework */; };
+		BB8295AD19A9A13500B716F9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8295AC19A9A13500B716F9 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB32101B19A9B75300ACB563 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BB32101C19A9B75300ACB563 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BB32101E19A9BB8600ACB563 /* NewBeaconTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBeaconTableViewController.h; sourceTree = "<group>"; };
+		BB32101F19A9BB8600ACB563 /* NewBeaconTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBeaconTableViewController.m; sourceTree = "<group>"; };
+		BB434D0519A9D38E00229F5E /* coloredCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coloredCircleView.h; sourceTree = "<group>"; };
+		BB434D0619A9D38E00229F5E /* coloredCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coloredCircleView.m; sourceTree = "<group>"; };
 		BB82953919A99F9600B716F9 /* iBeaconEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB82953C19A99F9600B716F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB82953E19A99F9600B716F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,18 +85,17 @@
 		BB82957519A99FE300B716F9 /* RWTItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTItemCell.m; sourceTree = "<group>"; };
 		BB82957D19A9A00600B716F9 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		BB82957E19A9A00600B716F9 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		BB82957F19A9A00600B716F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
-		BB82958019A9A00600B716F9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StoreKit.framework; sourceTree = "<group>"; };
-		BB82958119A9A00600B716F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
-		BB82958219A9A00600B716F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
-		BB82958319A9A00600B716F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCoreServices.framework; sourceTree = "<group>"; };
-		BB82958419A9A00600B716F9 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.1.3.dylib; sourceTree = "<group>"; };
-		BB82958519A9A00600B716F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreGraphics.framework; sourceTree = "<group>"; };
-		BB82958619A9A00600B716F9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CFNetwork.framework; sourceTree = "<group>"; };
-		BB82958719A9A00600B716F9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioToolbox.framework; sourceTree = "<group>"; };
-		BB82958819A9A00600B716F9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		BB82958919A9A00600B716F9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		BB82958A19A9A00600B716F9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		BB82959819A9A0C300B716F9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BB82959919A9A0C300B716F9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		BB82959C19A9A0CB00B716F9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BB82959E19A9A0F000B716F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB8295A019A9A10200B716F9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BB8295A219A9A10900B716F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BB8295A419A9A10F00B716F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB8295A619A9A11700B716F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BB8295A819A9A12100B716F9 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		BB8295AA19A9A12E00B716F9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB8295AC19A9A13500B716F9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,21 +103,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8295AD19A9A13500B716F9 /* AudioToolbox.framework in Frameworks */,
+				BB8295AB19A9A12E00B716F9 /* CFNetwork.framework in Frameworks */,
 				BB82953F19A99F9600B716F9 /* CoreGraphics.framework in Frameworks */,
-				BB82959319A9A00600B716F9 /* CFNetwork.framework in Frameworks */,
-				BB82959119A9A00600B716F9 /* libz.1.1.3.dylib in Frameworks */,
+				BB8295A919A9A12100B716F9 /* libz.1.1.3.dylib in Frameworks */,
+				BB8295A719A9A11700B716F9 /* MobileCoreServices.framework in Frameworks */,
+				BB8295A519A9A10F00B716F9 /* QuartzCore.framework in Frameworks */,
+				BB8295A319A9A10900B716F9 /* Security.framework in Frameworks */,
+				BB8295A119A9A10200B716F9 /* StoreKit.framework in Frameworks */,
+				BB82959F19A9A0F000B716F9 /* SystemConfiguration.framework in Frameworks */,
 				BB82954119A99F9600B716F9 /* UIKit.framework in Frameworks */,
-				BB82958F19A9A00600B716F9 /* QuartzCore.framework in Frameworks */,
-				BB82958D19A9A00600B716F9 /* StoreKit.framework in Frameworks */,
-				BB82958C19A9A00600B716F9 /* SystemConfiguration.framework in Frameworks */,
-				BB82959519A9A00600B716F9 /* Bolts.framework in Frameworks */,
-				BB82959719A9A00600B716F9 /* ParseFacebookUtils.framework in Frameworks */,
-				BB82959019A9A00600B716F9 /* MobileCoreServices.framework in Frameworks */,
-				BB82958E19A9A00600B716F9 /* Security.framework in Frameworks */,
-				BB82959619A9A00600B716F9 /* Parse.framework in Frameworks */,
-				BB82959219A9A00600B716F9 /* CoreGraphics.framework in Frameworks */,
+				BB82959A19A9A0C300B716F9 /* Parse.framework in Frameworks */,
+				BB82959D19A9A0CB00B716F9 /* Bolts.framework in Frameworks */,
+				BB82959B19A9A0C300B716F9 /* ParseFacebookUtils.framework in Frameworks */,
 				BB82953D19A99F9600B716F9 /* Foundation.framework in Frameworks */,
-				BB82959419A9A00600B716F9 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,14 @@
 		BB82953B19A99F9600B716F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB8295AC19A9A13500B716F9 /* AudioToolbox.framework */,
+				BB8295AA19A9A12E00B716F9 /* CFNetwork.framework */,
+				BB8295A819A9A12100B716F9 /* libz.1.1.3.dylib */,
+				BB8295A619A9A11700B716F9 /* MobileCoreServices.framework */,
+				BB8295A419A9A10F00B716F9 /* QuartzCore.framework */,
+				BB8295A219A9A10900B716F9 /* Security.framework */,
+				BB8295A019A9A10200B716F9 /* StoreKit.framework */,
+				BB82959E19A9A0F000B716F9 /* SystemConfiguration.framework */,
 				BB82953C19A99F9600B716F9 /* Foundation.framework */,
 				BB82953E19A99F9600B716F9 /* CoreGraphics.framework */,
 				BB82954019A99F9600B716F9 /* UIKit.framework */,
@@ -167,6 +181,10 @@
 				BB82956F19A99FE300B716F9 /* FirstViewControllerTableViewController.h */,
 				BB82957019A99FE300B716F9 /* FirstViewControllerTableViewController.m */,
 				BB82957119A99FE300B716F9 /* Main.storyboard */,
+				BB434D0519A9D38E00229F5E /* coloredCircleView.h */,
+				BB434D0619A9D38E00229F5E /* coloredCircleView.m */,
+				BB32101E19A9BB8600ACB563 /* NewBeaconTableViewController.h */,
+				BB32101F19A9BB8600ACB563 /* NewBeaconTableViewController.m */,
 				BB82957219A99FE300B716F9 /* RWTItem.h */,
 				BB82957319A99FE300B716F9 /* RWTItem.m */,
 				BB82957419A99FE300B716F9 /* RWTItemCell.h */,
@@ -212,18 +230,11 @@
 			children = (
 				BB82957D19A9A00600B716F9 /* UIAlertView+Blocks.h */,
 				BB82957E19A9A00600B716F9 /* UIAlertView+Blocks.m */,
-				BB82957F19A9A00600B716F9 /* SystemConfiguration.framework */,
-				BB82958019A9A00600B716F9 /* StoreKit.framework */,
-				BB82958119A9A00600B716F9 /* Security.framework */,
-				BB82958219A9A00600B716F9 /* QuartzCore.framework */,
-				BB82958319A9A00600B716F9 /* MobileCoreServices.framework */,
-				BB82958419A9A00600B716F9 /* libz.1.1.3.dylib */,
-				BB82958519A9A00600B716F9 /* CoreGraphics.framework */,
-				BB82958619A9A00600B716F9 /* CFNetwork.framework */,
-				BB82958719A9A00600B716F9 /* AudioToolbox.framework */,
-				BB82958819A9A00600B716F9 /* Bolts.framework */,
-				BB82958919A9A00600B716F9 /* Parse.framework */,
-				BB82958A19A9A00600B716F9 /* ParseFacebookUtils.framework */,
+				BB32101B19A9B75300ACB563 /* MBProgressHUD.h */,
+				BB32101C19A9B75300ACB563 /* MBProgressHUD.m */,
+				BB82959C19A9A0CB00B716F9 /* Bolts.framework */,
+				BB82959819A9A0C300B716F9 /* Parse.framework */,
+				BB82959919A9A0C300B716F9 /* ParseFacebookUtils.framework */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -326,11 +337,14 @@
 			files = (
 				BB82957B19A99FE300B716F9 /* RWTItemCell.m in Sources */,
 				BB82957719A99FE300B716F9 /* SecondViewController.m in Sources */,
+				BB32102019A9BB8600ACB563 /* NewBeaconTableViewController.m in Sources */,
 				BB82957A19A99FE300B716F9 /* RWTItem.m in Sources */,
 				BB82957819A99FE300B716F9 /* FirstViewControllerTableViewController.m in Sources */,
 				BB82958B19A9A00600B716F9 /* UIAlertView+Blocks.m in Sources */,
 				BB82957619A99FE300B716F9 /* AppDelegate.m in Sources */,
 				BB82954919A99F9600B716F9 /* main.m in Sources */,
+				BB32101D19A9B75300ACB563 /* MBProgressHUD.m in Sources */,
+				BB434D0719A9D38E00229F5E /* coloredCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +559,7 @@
 				BB82956719A99F9600B716F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB82956819A99F9600B716F9 /* Build configuration list for PBXNativeTarget "iBeaconEasyTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +568,7 @@
 				BB82956A19A99F9600B716F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

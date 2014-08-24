@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "MBProgressHUD.h"
 
 
 @interface FirstViewControllerTableViewController : UITableViewController <CLLocationManagerDelegate, UIAlertViewDelegate>
@@ -18,7 +19,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableArray *items;
 @property (strong, nonatomic) NSMutableArray *tableItems;
-
+@property (strong, nonatomic) MBProgressHUD *hud;
 
 
 @end

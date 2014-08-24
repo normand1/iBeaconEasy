@@ -22,6 +22,10 @@ NSString * const kRWTStoredItemsKey = @"storedItems";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.hud.labelText = @"Looking for Beacons";
     
     self.items = [[NSMutableArray alloc]init];
     self.tableItems = [[NSMutableArray alloc]init];
@@ -30,9 +34,7 @@ NSString * const kRWTStoredItemsKey = @"storedItems";
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.    
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -41,11 +43,6 @@ NSString * const kRWTStoredItemsKey = @"storedItems";
 //    NSTimer* myTimer __unused = [NSTimer scheduledTimerWithTimeInterval: 10.0 target: self
 //                                                      selector: @selector(refreshResults:) userInfo: nil repeats: YES];
 
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    
 }
 
 -(void)addNewTagWithUUIDString:(NSString*)tagUUID itemName:(NSString*)itemName major:(int)majorInt minor:(int)minorInt message:(NSString*)message
@@ -173,6 +170,7 @@ NSString * const kRWTStoredItemsKey = @"storedItems";
     
     if (_tableItems.count-1 == indexPath.row) {
         [self.refreshControl endRefreshing];
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     }
     
     RWTItem *item = _tableItems[indexPath.row];
@@ -183,6 +181,8 @@ NSString * const kRWTStoredItemsKey = @"storedItems";
     {
         beaconUnkStateCounter = 0;
         [self refreshResults:nil];
+        self.hud.labelText = @"Updating Beacons";
+        self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     }
     
     cell.item = item;

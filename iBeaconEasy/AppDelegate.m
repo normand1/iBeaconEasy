@@ -24,11 +24,18 @@
     [Parse setApplicationId:@"tKbXvRlbVFgzowJHtVYMsHrIRzQQxrQOsM4M2esH"
                   clientKey:@"aS4zTUkQ59mNIQjyj7sPhA944f6E1GaEIIHLpoxM"];
     
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
-    //Set inital tab
-//    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-//    tabBarController.selectedIndex = 1;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *viewController = [storyboard instantiateInitialViewController];
+    
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+
+
+    
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     return YES;
 }
@@ -47,19 +54,19 @@
     }
 }
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
-    
-    if (application.applicationState == UIApplicationStateInactive) {
-        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
-    }
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    if (application.applicationState == UIApplicationStateInactive) {
-        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
-    }
-}
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+//    [PFPush handlePush:userInfo];
+//    
+//    if (application.applicationState == UIApplicationStateInactive) {
+//        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+//    }
+//}
+//
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+//    if (application.applicationState == UIApplicationStateInactive) {
+//        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+//    }
+//}
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.

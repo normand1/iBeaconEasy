@@ -42,15 +42,23 @@
 - (NSString *)nameForProximity:(CLProximity)proximity {
     switch (proximity) {
         case CLProximityUnknown:
+            self.coloredCircle.colorForCircle = [UIColor blackColor];
+            [self.coloredCircle setNeedsDisplay];
             return @"Unknown";
             break;
         case CLProximityImmediate:
+            self.coloredCircle.colorForCircle = [UIColor greenColor];
+                        [self.coloredCircle setNeedsDisplay];
             return @"Immediate";
             break;
         case CLProximityNear:
+            self.coloredCircle.colorForCircle = [UIColor yellowColor];
+                        [self.coloredCircle setNeedsDisplay];
             return @"Near";
             break;
         case CLProximityFar:
+            self.coloredCircle.colorForCircle = [UIColor redColor];
+                        [self.coloredCircle setNeedsDisplay];
             return @"Far";
             break;
     }

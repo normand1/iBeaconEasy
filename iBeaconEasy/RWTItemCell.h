@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "coloredCircleView.h"
+
 
 @class RWTItem;
 
@@ -18,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *beaconLocation;
 @property (weak, nonatomic) IBOutlet UILabel *beaconMessage;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingInd;
+@property (weak, nonatomic) IBOutlet coloredCircleView *coloredCircle;
 
 
 @end

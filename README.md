@@ -9,6 +9,8 @@ Share fast, easily and simply in real life!
 Attributions
 =============
 Chris Wagner's iBeacon tutorial: http://www.raywenderlich.com/66584/ios7-ibeacons-tutorial
+
 MBProgressHUD
+
 Parse.com
 
